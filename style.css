@@ -1,29 +1,33 @@
+
+
 .container {
     max-width: 400px;
     margin: auto;
-    font-family: monospace
+    font-family: monospace;
+    background-color: #EFE4C0;
+    padding: 10px 10px;
+    color: #35485e;
 }
 
-h1,
 h2,
-.sub-title,
 .buttons,
-legend,
-footer {
+footer,
+fieldset {
    text-align: center;
-   color: #35485e;
    letter-spacing: 0.08em;
-   margin: 20px;
+   margin: 20px auto;
 }
 
 ol {
     line-height: 20px;
-    margin: 0;
 }
 
-fieldset {
-    border-radius: 10px;
-    border-color: #35485e;
+legend {
+    font-size: large;
+}
+
+img {
+    width: 100%;
 }
 
 
