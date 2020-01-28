@@ -1,8 +1,10 @@
+body {
+    background-color: #EFE4C0;
+}
 .container {
     max-width: 400px;
     margin: auto;
     font-family: monospace;
-    background-color: #EFE4C0;
     padding: 10px 10px;
     color: #35485e;
 }
@@ -14,6 +16,10 @@ fieldset {
    text-align: center;
    letter-spacing: 0.08em;
    margin: 20px auto;
+}
+
+legend {
+    font-size: large;
 }
 
 img {
@@ -34,12 +40,8 @@ li:active {
     transform: scaleZ(1.5);
 }
 
-legend {
-    font-size: large;
-}
-
 figure {
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgb(0, 0, 0, 0.8);
     color: white;
     margin: auto;
     padding: 5px 5px;
@@ -48,6 +50,10 @@ figure {
 figcaption {
     font-size: large;
     font-weight: bold;
+}
+
+pre {
+    text-align: start;
 }
 
 
