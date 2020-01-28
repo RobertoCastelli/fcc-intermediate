@@ -1,6 +1,8 @@
 body {
     background-color: #EFE4C0;
+    text-align: center;
 }
+
 .container {
     max-width: 400px;
     margin: auto;
@@ -13,7 +15,7 @@ h2,
 .buttons,
 footer,
 fieldset {
-   text-align: center;
+  
    letter-spacing: 0.08em;
    margin: 20px auto;
 }
@@ -26,8 +28,10 @@ img {
     width: 100%;
 }
 
-ol {
+ol,
+#description {
     line-height: 20px;
+    text-align: start;
 }
 
 li:hover {
