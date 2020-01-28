@@ -3,13 +3,14 @@ let description = document.getElementById('description')
 let test = document.getElementById('test')
 let code = document.getElementById('code')
 let list = document.querySelectorAll('#list-view')
+let btnTop = document.getElementById('btnTop')
 
 let solutions = [
     {
         title: "01 - Sum All Numbers",
         description: "We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.",
         tester: function () { sumAll() },
-        code: "code 1"
+        code: "\nfunction sumAll(arr) { \n var max = Math.max(arr[0], arr[1]); \n var min = Math.min(arr[0], arr[1]); \n var temp = 0; \n for(var i = min; i <= max; i++) { \n temp += i; \n} \n return temp; \n} "
     },
     {
         title: "02 - Diff Two Arrays",
@@ -34,6 +35,8 @@ list.forEach(element => {
         code.innerHTML = solutions[index].code
     })
 })
+
+btnTop.addEventListener('click', () => document.documentElement.scrollTop = 0)
 
 
 
