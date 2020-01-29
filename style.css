@@ -15,10 +15,6 @@ h2,
 .buttons,
 footer,
 fieldset {
-<<<<<<< HEAD
-=======
-  
->>>>>>> d3c678dbf6b2704c7bea2dfbe10789f98902cbf1
    letter-spacing: 0.08em;
    margin: 20px auto;
 }
@@ -32,11 +28,7 @@ img {
 }
 
 ol,
-<<<<<<< HEAD
 #description{
-=======
-#description {
->>>>>>> d3c678dbf6b2704c7bea2dfbe10789f98902cbf1
     line-height: 20px;
     text-align: start;
 }
