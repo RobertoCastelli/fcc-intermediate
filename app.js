@@ -31,7 +31,7 @@ let solutions = [
     {
         title: "05 - Spinal Tap Case",
         description: "Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.",
-        code: "\nfunction spinalCase(str) { \n return str \n  .replace(/([a-z])([A-Z])/g, '$1 $2') \n  .replace(/\s|_/g, '-') \n  .toLowerCase() \n}"
+        code: "\nfunction spinalCase(str) { \n return str \n  .replace(/([a-z])([A-Z])/g, '$1 $2') \n  .replace(/\\s|_/g, '-') \n  .toLowerCase() \n}"
     },
     {
         title: "06 - Pig Latin",
