@@ -1,10 +1,13 @@
 // GLOBAL VARIABLES
 let title = document.getElementById('title')
 let description = document.getElementById('description')
-let test = document.getElementById('test')
 let code = document.getElementById('code')
 let list = document.querySelectorAll('#list-view')
 let btnTop = document.getElementById('btnTop')
+let btnShow = document.getElementById('btnShow')
+let solution = document.getElementById('solution')
+
+initialState()
 
 // LIST OF SOLUTIONS 
 let solutions = [
@@ -48,7 +51,8 @@ let solutions = [
 // DISPLAY SOLUTION 
 list.forEach(element => {
     element.addEventListener('click', e => {
-        scrollToTitle();
+        // scrollToTitle()
+        initCodeDisplay()
         let index = e.target.id
         title.innerHTML = solutions[index].title
         description.innerHTML = solutions[index].description
@@ -56,11 +60,34 @@ list.forEach(element => {
     })
 })
 
-// SCROLL TOP
-btnTop.addEventListener('click', () => document.documentElement.scrollTo({ top: 0, behavior: 'smooth' }))
+// INITIAL STATE
+function initialState() {
+    btnShow.style.display = 'none'
+}
+
+// INITIAL CODE DISPLAY
+function initCodeDisplay() {
+    btnShow.disabled = false
+    solution.style.display = "none"
+    btnShow.style.display = 'block'
+    btnShow.innerHTML = 'SHOW CODE'
+}
 
 // SCROLL TO TITLE
 function scrollToTitle() {
     title.scrollIntoView({ behavior: 'smooth' })
 }
 
+// SCROLL TOP
+btnTop.addEventListener('click', () => document.documentElement.scrollTo({ top: 0, behavior: 'smooth' }))
+
+// TOGGLE CODE DISPLAY
+btnShow.addEventListener('click', () => {
+    if(btnShow.innerHTML == 'SHOW CODE') {
+        solution.style.display = "block"
+        btnShow.innerHTML = 'HIDE CODE'
+    } else {
+        solution.style.display = "none"
+        btnShow.innerHTML = 'SHOW CODE'
+    }
+})
