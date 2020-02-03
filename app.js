@@ -6,6 +6,8 @@ let list = document.querySelectorAll('#list-view')
 let btnTop = document.getElementById('btnTop')
 let btnShow = document.getElementById('btnShow')
 let solution = document.getElementById('solution')
+let clack = document.getElementById('clack')
+let zip = document.getElementById('zip')
 
 initialState()
 
@@ -52,6 +54,7 @@ let solutions = [
 list.forEach(element => {
     element.addEventListener('click', e => {
         // scrollToTitle()
+        clack.play()
         initCodeDisplay()
         let index = e.target.id
         title.innerHTML = solutions[index].title
@@ -86,6 +89,7 @@ btnShow.addEventListener('click', () => {
     if(btnShow.innerHTML == 'SHOW CODE') {
         solution.style.display = "block"
         btnShow.innerHTML = 'HIDE CODE'
+        zip.play()
     } else {
         solution.style.display = "none"
         btnShow.innerHTML = 'SHOW CODE'
