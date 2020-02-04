@@ -47,6 +47,76 @@ let solutions = [
         title: "07 - Search and Replace",
         description: "Perform a search and replace on the sentence using the arguments provided and return the new sentence. First argument is the sentence to perform the search and replace on. Second argument is the word that you will be replacing (before). Third argument is what you will be replacing the second argument with (after).",
         code: "solving..."
+    },
+    {
+        title: "08 - DNA Pairing",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "09 - Missing letters",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "10 - Sorted Union",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "11 - Convert HTML Entities",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "12 - Sum All Odd Fibonacci",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "13 - Sum All Primes",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "14 - Smallest Common Multiple",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "15 - Drop it",
+        description: "Given the array arr, iterate through and remove each element starting from the first element (the 0 index) until the function func returns true when the iterated element is passed through it.\n Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.",
+        code: "\nfunction dropElements(arr, func) {\n  while(!func(arr[0])) {\n   arr.shift() \n  } \n return arr \n}"
+    },
+    {
+        title: "16 - Steamroller",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "17 - Binary Agents",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "18 - Everything be true",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "19 - Arguments Optional",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "20 - Make a person",
+        description: "work in progress",
+        code: "solving..."
+    },
+    {
+        title: "21 - Map the Debri",
+        description: "work in progress",
+        code: "solving..."
     }
 ]
 
