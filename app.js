@@ -123,7 +123,7 @@ let solutions = [
 // DISPLAY SOLUTION 
 list.forEach(element => {
     element.addEventListener('click', e => {
-        scrollToTitle()
+        scrollToDestination(title)
         clack.play()
         initCodeDisplay()
         let index = e.target.id
@@ -146,9 +146,11 @@ function initCodeDisplay() {
     btnShow.innerHTML = 'SHOW CODE'
 }
 
-// SCROLL TO TITLE
-function scrollToTitle() {
-    title.scrollIntoView({ behavior: 'smooth' })
+// SCROLL TO DESTINATION
+function scrollToDestination(destination) {
+    setTimeout(() => {
+        destination.scrollIntoView({ behavior: 'smooth' })
+    });
 }
 
 // SCROLL TOP
@@ -160,6 +162,7 @@ btnShow.addEventListener('click', () => {
         solution.style.display = "block"
         btnShow.innerHTML = 'HIDE CODE'
         zip.play()
+        scrollToDestination(code)
     } else {
         solution.style.display = "none"
         btnShow.innerHTML = 'SHOW CODE'
