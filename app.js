@@ -123,7 +123,7 @@ let solutions = [
 // DISPLAY SOLUTION 
 list.forEach(element => {
     element.addEventListener('click', e => {
-        // scrollToTitle()
+        scrollToTitle()
         clack.play()
         initCodeDisplay()
         let index = e.target.id
@@ -156,7 +156,7 @@ btnTop.addEventListener('click', () => document.documentElement.scrollTo({ top: 
 
 // TOGGLE CODE DISPLAY
 btnShow.addEventListener('click', () => {
-    if(btnShow.innerHTML == 'SHOW CODE') {
+    if (btnShow.innerHTML == 'SHOW CODE') {
         solution.style.display = "block"
         btnShow.innerHTML = 'HIDE CODE'
         zip.play()
